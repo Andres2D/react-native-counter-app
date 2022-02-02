@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, TouchableOpacity } from 'react-native';
 
 export const CounterScreen = () => {
 
@@ -17,10 +17,16 @@ export const CounterScreen = () => {
             }}>Counter: {counter}
           </Text>
 
-          <Button
-            title='Click'
-            onPress={() => setCounter(counter + 1)}
-          />
+          <TouchableOpacity
+            onPress={() => setCounter(counter + 1)}  
+          >
+            <View style={{
+                backgroundColor: 'red',
+                borderRadius: 100
+            }}>
+                <Text>+1</Text>
+            </View>
+          </TouchableOpacity>
       </View>
   );
 };
