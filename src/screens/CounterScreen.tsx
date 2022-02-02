@@ -12,25 +12,16 @@ export const CounterScreen = () => {
           </Text>
 
           <Fab 
-            title="+1"
-            onPress={() => setCounter(counter + 1)}
+            title="-1"
+            onPress={() => setCounter(counter - 1)}
             position='left'
           />
 
           <Fab 
-            title="-1"
-            onPress={() => setCounter(counter - 1)}
+            title="+1"
+            onPress={() => setCounter(counter + 1)}
             position='right'
           />
-
-          {/* <TouchableOpacity
-            style={ styles.fabLocationBL }
-            onPress={() => setCounter(counter - 1)}  
-          >
-            <View style={ styles.fab }>
-                <Text style={ styles.fabText }>-1</Text>
-            </View>
-          </TouchableOpacity> */}
       </View>
   );
 };
