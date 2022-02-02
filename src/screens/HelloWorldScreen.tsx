@@ -13,7 +13,7 @@ export const HelloWorldScreen = () => {
             fontSize: 45,
             textAlign: 'center'
             }}>
-            Hello World
+            Hello 2D
         </Text>
     </View>
   )
